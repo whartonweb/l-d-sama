@@ -1,0 +1,336 @@
+/*
+ Theme Name:   Legacy Detox Child Theme
+ Theme URI:    https://afterimagedesigns.com/wp-bootstrap-starter/wordpress-bootstrap-starter-theme/
+ Description:  Legacy Detox child theme child
+ Author:       Richard Wharton C/O Sama-labs
+ Author URI:   https://github.com/whartonweb
+ Template:     wp-bootstrap-starter
+ License:      GNU General Public
+ Version:      .5
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  Bootstrap Child
+*/
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+* {
+    margin: 0;
+    padding: 0; }
+a {  color: initial;}
+body{
+    font-family: 'Didact Gothic', sans-serif;
+    color: #808082
+}
+.logo-link img {
+    /*max-width: 43%; */}
+#primary{padding: 0}
+/*----------------------------------*/
+/*----------- header ----------------*/
+/*----------------------------------*/
+header#masthead {
+    background-color: transparent;
+    box-shadow: none; }
+
+.navbar-brand {
+
+    width: 25%;
+
+}
+#main-nav {
+
+    position: relative;
+    bottom: 38px;
+
+}
+.sub-link a:link {
+
+    color: #808082;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: .67em;
+
+}
+.page-template-home-page #page {
+
+    background: url('/wordpress/wp-content/themes/detox-child/img/front-large.jpg');
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto auto;
+    background-position: top center;
+    background-size: 1140px;
+    background-repeat: no-repeat;
+
+}
+h2.page-title {
+    padding: .85em .85em .85em .86em;
+    color: #474747;
+    background-color: #eaf9f9;
+    text-transform: uppercase;
+    margin-bottom: 1.7em
+
+}
+.page-title::after {
+    content: url('http://localhost/wordpress/wp-content/themes/detox-child/img/leaves.png');
+    position: absolute;
+    right: 0;
+    top: -100px;
+
+}
+/*.page-title::after {*/
+    /*content: url('');*/
+    /*background: url('http://localhost/wordpress/wp-content/themes/detox-child/img/leaves.png');*/
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: -100px;*/
+/*}*/
+
+
+/*----------------------------------*/
+/*--------- Navigation -------------*/
+/*----------------------------------*/
+#main-nav {
+    position: relative;
+    bottom: 38px;
+}
+.sub-link a:link {
+    color: #808082;
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: .67em;
+}
+body:not(.theme-preset-active) #masthead .navbar-nav > li > a {
+    color: #6d6d6d !important;
+        color: #6d6d6d;
+}
+ul.navbar-nav li  {
+padding: 0 .75em
+}
+ul.navbar-nav li.active  {
+    background: transparent url('img/underline.png') no-repeat 10px 27px;
+    background-size:100px;
+}
+.page-template-home-page .entry-header{display:none}
+#content.site-content {
+    padding-top: 0;
+}
+.btn-primary{background-color: #e89f5d;
+    border-radius: 0px;
+    margin: 0 1.7rem 0 0;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+    border:none;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+p, h4,ul{padding: 0 1.7rem }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {   font-family: 'Didact Gothic', sans-serif;}
+.content-area h4 {  color: #b3ced2;}
+.content-area h4 strong {  color: initial; font-size: 2rem; font-weight: 800}
+ul{padding: 0 3.4rem; list-style: none}
+.hero .buttons{text-align: right; padding-right: 4rem}
+.blue-bullets{
+   margin-bottom: 4em;
+}
+.blue-bullets li{
+    line-height: 1;
+
+}
+.blue-bullets li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #78b4c8; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    font-size: 2em;
+line-height: 1;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    position: relative;
+    top: 3px;
+    left: 5px
+}
+.orange-bullets li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #e89f5d; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    font-size: 2em;
+    line-height: 1;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    position: relative;
+    top: 3px;
+    left: 5px
+}
+@media (max-width: 767px){
+    .sub-link {
+        display: none;
+    }
+    .nav-tabs .nav-item {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .nav-tabs{margin-bottom: 1em}
+    .page-title::after {
+        content: url('http://localhost/wordpress/wp-content/themes/detox-child/img/leaves_small.png');
+        position: absolute;
+        right: 0;
+        top: -20px;
+
+    }
+    .row.hero {
+
+        height: 73vh;
+        padding: 3em 1em;
+
+    }
+    #myTabContent {
+        background: none;
+        background-position-x: 0%;
+        height: auto;
+        margin-bottom: 3.4rem;
+        background-position-x: 30px;
+
+    }
+    .tab-area .btn.btn-primary.text-center {
+        margin-left: 0;
+    }
+    .why-florida{background: transparent;
+        background-size: auto;
+
+        background-position: right bottom;
+    }
+}
+@media (min-width: 768px){
+    .why-florida .btn.btn-primary {
+        float: right;
+    }
+    /*last-min-hack*/
+    .single-post .col-sm-4.question-aside {
+        margin-top: -420px;
+    }
+    .page-title::after {
+        pointer-events: none;
+        content: url('http://localhost/wordpress/wp-content/themes/detox-child/img/leaves.png');
+        position: absolute;
+        right: 0;
+        top: -100px;
+
+    }
+    .col-sm-4.question-aside {
+
+        margin-top: 90px;}
+.row.hero {
+    height: 570px;
+    padding-right: 2rem;
+}
+    .tab-pane {
+        width: 33%;
+        padding: 4em 0 0;
+        margin: 0 0 0 4em;
+        background-color: rgba(255,255,255,.5);
+    }
+    #myTabContent {
+        background: url('/wordpress/wp-content/uploads/2018/11/doctor-tab-1.jpg');
+        height: 789px;
+        background-position-x: 30px;
+    }
+    .tab-area .btn.btn-primary.text-center {
+        margin-left: 28%;
+    }
+    .bottom-img{
+        height: 800px;
+
+    }
+    .bottom-img p {
+
+        padding-bottom: 1em;
+
+    }
+    .bottom-img.home {
+        background: url('/wordpress/wp-content/themes/detox-child/img/bottom-home-img.jpg') no-repeat;
+        background-position-y: 100px;
+
+    }
+    .bottom-img.programs {
+        background: url('/wordpress/wp-content/themes/detox-child/img/programs-bottom.jpg') no-repeat;
+        background-position-y: 100px;
+    }
+    .bottom-img.admissions {
+        background: url('/wordpress/wp-content/themes/detox-child/img/admissions-bottom.jpg') no-repeat;
+        background-position-y: 100px;
+    }
+
+    .bottom-img.alc {
+        background: url('/wordpress/wp-content/themes/detox-child/img/alc.jpg') no-repeat;
+        background-position-y: 100px;
+    }
+
+}
+
+
+.row.hero h3 {  color: #78b4c8;  text-transform: uppercase;  border-bottom: 1px solid #78b4c8;
+}
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+.text-center.large {
+    background-color: #f5feff;
+    padding: .7em;
+    color: #779c9d;
+    margin: 0;
+    font-size: 1.7rem;
+}
+
+.blue-body_text{
+    color:white;
+    background-color: #b3ced2;
+    padding: 1.7em 1.7em 0 1.7em;
+ }
+.blue-body_text:last-child{
+    padding-bottom: 1.7em;
+}
+.blue-body_text span{color: #779c9d; }
+b, .single strong {
+
+    font-weight: bolder;
+    font-size: 2em;
+
+}
+.single p, .single h4{padding-left:0}
+
+
+/*----------------------------------*/
+/*--------- content -------------*/
+/*----------------------------------*/
+img.lobby{ width: 25vw}
+/*form*/
+.wpcf7-form {
+    padding: 1.7em;
+}
+.wpcf7-form-control.wpcf7-submit.btn.btn-primary {
+    float: right;
+    margin-top: 1.7rem;
+}
+span.wpcf7-form-control-wrap input, span.wpcf7-form-control-wrap textarea {
+
+    background-color: #eaf9f9;
+    border: none;
+    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.2);
+
+}
+span.wpcf7-form-control-wrap textarea{margin-left: .85em; height: 3.4em}
+.col-sm-8 .page-title {
+
+    display: none;
+
+}
+iframe{width: 100%}
+body:not(.theme-preset-active) footer#colophon {
+    color: white;
+    background-color: #b3ced2;
+    padding: 1.3em 0
+
+}
+ul.footer-list-right {margin: 0}
+ul.footer-list-right li {
+    display: inline;
+    padding-right: 1em;
+}
